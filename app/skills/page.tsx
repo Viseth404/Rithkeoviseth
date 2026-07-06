@@ -1,75 +1,36 @@
-import Link from 'next/link'
-import { ArrowLeft } from 'lucide-react'
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
 const skillCategories = [
   {
-    name: 'Financial Analysis & Reporting',
+    name: "Data Analysis & Reporting",
     skills: [
-      'Financial Reporting',
-      'Budget Analysis',
-      'Financial Reconciliation',
-      'Financial Data Analysis',
-      'Decision Support',
-    ],
-    level: 90,
-  },
-  {
-    name: 'Microsoft Excel for Data Analysis',
-    skills: [
-      'Pivot Tables',
-      'Lookup Functions',
-      'Data Validation',
-      'Conditional Formatting',
-      'Charts & Reports',
+      "Microsoft Excel",
+      "Advanced Formulas",
+      "XLOOKUP / VLOOKUP",
+      "Pivot Tables",
+      "Conditional Formatting",
+      "Charts & Dashboards",
+      "Financial Reporting",
     ],
     level: 95,
   },
   {
-    name: 'Database & SQL',
-    skills: ['PostgreSQL', 'SQL Queries', 'Joins', 'Views', 'Data Extraction'],
+    name: "Python & Data Analytics",
+    skills: ["Python", "Pandas", "NumPy", "Plotly", "Streamlit"],
     level: 80,
   },
   {
-    name: 'Programming & Development',
-    skills: ['Python', 'TypeScript', 'React', 'Next.js'],
-    level: 80,
+    name: "Web Development",
+    skills: ["TypeScript", "React", "Next.js", "Supabase"],
+    level: 70,
   },
   {
-    name: 'Tools & Technologies',
-    skills: [
-      'Microsoft Office',
-      'Microsoft Excel',
-      'Microsoft Word',
-      'Microsoft PowerPoint',
-      'Google Workspace',
-      'Notion',
-      'Trello',
-      'GitHub',
-      'Supabase',
-      'VS Code',
-      'Tableau',
-      'Vercel',
-    ],
-    level: 90,
+    name: "Database & SQL",
+    skills: ["SQL", "PostgreSQL", "Joins", "Views", "Data Extraction"],
+    level: 70,
   },
-  {
-    name: 'Professional Skills',
-    skills: [
-      'Problem Solving',
-      'Critical Thinking',
-      'Research',
-      'Documentation',
-      'Communication',
-      'Team Collaboration',
-      'Task Management',
-      'Time Management',
-      'Attention to Detail',
-      'Business Process Improvement',
-    ],
-    level: 90,
-  },
-]
-
+];
 export default function SkillsPage() {
   return (
     <div className="mx-auto w-full max-w-4xl px-4 py-12">
@@ -130,11 +91,7 @@ export default function SkillsPage() {
         <div className="grid gap-3 text-sm text-muted-foreground md:grid-cols-2">
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Financial Reporting & Analysis
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Budget Monitoring
+            Financial Reporting
           </div>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
@@ -142,19 +99,23 @@ export default function SkillsPage() {
           </div>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+            Pivot Tables & Dashboards
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+            Python Data Analytics
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+            Pandas, NumPy & Plotly
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-primary" />
             PostgreSQL & SQL
           </div>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Data Cleaning & Reconciliation
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Business Process Improvement
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Git & GitHub
+            Data Extraction & Cleaning
           </div>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
@@ -163,5 +124,5 @@ export default function SkillsPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }

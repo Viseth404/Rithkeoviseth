@@ -18,9 +18,9 @@ export default function AboutPage() {
       <div className="space-y-8">
         <p className="text-lg leading-8 text-muted-foreground">
           I&apos;m a detail-oriented Financial Analyst with experience in
-          financial reporting, budgeting, data analysis, reconciliation, and
-          business decision support. I use Excel, PostgreSQL, and BI tools to
-          turn financial data into clear reports and useful insights.
+          financial reporting, data analysis, reconciliation, and business
+          decision support. I use Excel, Python, PostgreSQL, and dashboard
+          tools to turn data into clear reports and useful insights.
         </p>
 
         <section className="rounded-lg border border-border bg-card p-6 transition hover:shadow-md">
@@ -28,44 +28,49 @@ export default function AboutPage() {
             Background
           </h2>
           <p className="leading-7 text-muted-foreground">
-            I currently work as a Financial Analyst at Private Family Business
-            – Digital Marketing & Tech Solution. My work includes analyzing
-            financial data, preparing reports, monitoring budget utilization,
-            reconciling financial records, and supporting business process
-            improvements through accurate reporting.
+            I currently work as a Financial Analyst at a private family
+            business focused on digital marketing and technology solutions. My
+            work includes analyzing financial data, preparing reports,
+            reconciling financial records, monitoring performance, and
+            improving reporting processes.
           </p>
         </section>
 
         <section className="rounded-lg border border-border bg-card p-6 transition hover:shadow-md">
           <h2 className="mb-4 text-2xl font-bold text-foreground">Skills</h2>
-          <ul className="grid gap-2 text-muted-foreground md:grid-cols-2">
+
+          <ul className="grid gap-3 text-muted-foreground md:grid-cols-2">
             <li className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              Financial Analysis & Reporting
+              Financial Reporting & Analysis
             </li>
             <li className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              Advanced Excel: Pivot Tables, Lookup Functions, Data Validation, Conditional Formatting
+              Advanced Microsoft Excel
             </li>
             <li className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              Data Cleaning & Reconciliation
+              Pivot Tables & Dashboards
             </li>
             <li className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              PostgreSQL: Queries, Joins, Analytical Views
+              Python Data Analytics
             </li>
             <li className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              Tableau / BI Reporting
+              Pandas, NumPy & Plotly
             </li>
             <li className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              Git & GitHub
+              PostgreSQL & SQL
             </li>
             <li className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              Research & Documentation
+              Data Extraction & Cleaning
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+              React & Next.js Development
             </li>
           </ul>
         </section>
@@ -76,9 +81,9 @@ export default function AboutPage() {
           </h2>
           <p className="leading-7 text-muted-foreground">
             My approach focuses on accuracy, clarity, and practical business
-            value. I review financial data carefully, identify patterns or
-            issues, build organized reports, and communicate insights that
-            help management make better decisions.
+            value. I review data carefully, identify patterns and issues, build
+            organized reports, and communicate insights that help management
+            make better decisions.
           </p>
         </section>
 
@@ -87,10 +92,10 @@ export default function AboutPage() {
             What I&apos;m Building
           </h2>
           <p className="leading-7 text-muted-foreground">
-            I&apos;m developing my portfolio around finance, data analysis,
-            reporting dashboards, and business intelligence projects. My goal
-            is to combine financial knowledge with technical skills to create
-            reports and tools that support real business operations.
+            I&apos;m building portfolio projects around finance, data analysis,
+            reporting dashboards, and business intelligence. My goal is to
+            combine financial knowledge with technical skills to create useful
+            tools for real business operations.
           </p>
         </section>
 
