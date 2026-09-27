@@ -5,9 +5,9 @@ import { Footer } from '@/components/ui/footer'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Keo Viseth | Data Analyst Portfolio',
+  title: 'Rith Keo Viseth | System Developer Portfolio',
   description:
-    'Financial analyst and data analyst portfolio showcasing projects in financial reporting, Excel, SQL, and data analysis.',
+    'System developer portfolio showcasing automation with Google Apps Script and AppSheet, web apps built with Next.js, and data analysis with Google Sheets, Excel, SQL, and Python.',
   icons: {
     icon: [
       {

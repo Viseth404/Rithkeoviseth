@@ -3,8 +3,50 @@ import { ArrowLeft } from "lucide-react";
 
 const skillCategories = [
   {
+    name: "Automation & Google Products",
+    skills: [
+      "Google Apps Script",
+      "Google Sheets Automation",
+      "AppSheet Apps",
+      "Google Workspace",
+      "Process Automation",
+      "Workflows",
+    ],
+    level: 90,
+  },
+  {
+    name: "Web Development",
+    skills: [
+      "TypeScript",
+      "Next.js 16 (App Router)",
+      "Tailwind CSS 4",
+      "shadcn/ui",
+      "Base UI",
+      "Lucide Icons",
+      "Recharts",
+      "Supabase",
+    ],
+    level: 80,
+  },
+  {
+    name: "Backend & System Architecture",
+    skills: [
+      "NextAuth (Credentials + JWT)",
+      "bcrypt Password Hashing",
+      "Telegram Client Integration",
+      "Background Workers",
+      "pg-boss Job Queues & Scheduling",
+      "PostgreSQL LISTEN/NOTIFY",
+      "Server-Sent Events (Realtime)",
+      "Upstash Redis Caching",
+      "Sharp Image Processing",
+    ],
+    level: 75,
+  },
+  {
     name: "Data Analysis & Reporting",
     skills: [
+      "Google Sheets",
       "Microsoft Excel",
       "Advanced Formulas",
       "XLOOKUP / VLOOKUP",
@@ -13,21 +55,38 @@ const skillCategories = [
       "Charts & Dashboards",
       "Financial Reporting",
     ],
-    level: 95,
+    level: 85,
   },
   {
     name: "Python & Data Analytics",
     skills: ["Python", "Pandas", "NumPy", "Plotly", "Streamlit"],
-    level: 80,
-  },
-  {
-    name: "Web Development",
-    skills: ["TypeScript", "React", "Next.js", "Supabase"],
-    level: 70,
+    level: 75,
   },
   {
     name: "Database & SQL",
-    skills: ["SQL", "PostgreSQL", "Joins", "Views", "Data Extraction"],
+    skills: [
+      "SQL",
+      "PostgreSQL 16",
+      "Prisma ORM",
+      "Migrations",
+      "Indexing",
+      "Joins",
+      "Views",
+      "Data Extraction",
+    ],
+    level: 75,
+  },
+  {
+    name: "Testing, DevOps & Observability",
+    skills: [
+      "Docker",
+      "Docker Compose",
+      "Vitest",
+      "Node Test Runner",
+      "Playwright E2E",
+      "Sentry",
+      "Pino Structured Logging",
+    ],
     level: 70,
   },
 ];
@@ -91,35 +150,43 @@ export default function SkillsPage() {
         <div className="grid gap-3 text-sm text-muted-foreground md:grid-cols-2">
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Financial Reporting
+            Google Apps Script
           </div>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Advanced Microsoft Excel
+            AppSheet Apps & Workflows
           </div>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Pivot Tables & Dashboards
+            Google Sheets Automation
           </div>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Python Data Analytics
+            Google Workspace Integration
           </div>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Pandas, NumPy & Plotly
+            System & Process Automation
           </div>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            PostgreSQL & SQL
+            Next.js Development
           </div>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Data Extraction & Cleaning
+            Database & SQL
           </div>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            React & Next.js Development
+            Workers, Job Queues & Realtime Systems
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+            Testing & Docker Deployment
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+            Data Analysis & Reporting
           </div>
         </div>
       </div>

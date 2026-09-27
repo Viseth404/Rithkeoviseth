@@ -71,9 +71,10 @@ export default function ContactPage() {
           <h2 className="mb-6 text-xl font-bold text-foreground">Let&apos;s Connect</h2>
 
           <p className="mb-8 text-muted-foreground">
-            I&apos;m open to discussing new opportunities, financial analysis,
-            data analytics projects, and software development work. Feel free
-            to reach out through email or connect with me on GitHub.
+            I&apos;m open to discussing new opportunities, system automation,
+            AppSheet app development, Google Workspace projects, and software
+            development work. Feel free to reach out through email or connect
+            with me on GitHub.
           </p>
 
           <div className="space-y-4">

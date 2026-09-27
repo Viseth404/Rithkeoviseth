@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, BarChart3, FileSpreadsheet, Database } from "lucide-react"
+import { ArrowRight, BarChart3, FileSpreadsheet, Code } from "lucide-react"
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-4xl items-center gap-12 px-4 md:grid-cols-[1.3fr_0.7fr]">
           <div className="animate-in fade-in slide-in-from-left-4 duration-700">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-muted-foreground">
-              Financial Analyst & Data Analyst
+              System Developer & Automation Specialist
             </p>
 
             <h1 className="mb-6 text-4xl font-bold leading-tight text-foreground md:text-5xl">
@@ -20,10 +20,10 @@ export default function Home() {
             </h1>
 
             <p className="mb-8 max-w-2xl text-lg leading-8 text-muted-foreground">
-              I analyze financial data, build clear reports, clean and
-              reconcile records, and create insights that support better
-              business decisions. My work combines finance, advanced Excel,
-              Python, PostgreSQL, and modern web tools.
+              I build automated systems around Google products — automating
+              Google Sheets with Apps Script, creating mobile apps and
+              workflows with AppSheet, and connecting Google Workspace tools —
+              along with full-stack web applications built on Next.js.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -68,8 +68,9 @@ export default function Home() {
             </h2>
 
             <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-              Practical skills focused on financial reporting, data analysis,
-              dashboards, and business decision support.
+              Practical skills focused on system automation, Google product
+              integration, full-stack web development, and business decision
+              support.
             </p>
           </div>
 
@@ -78,40 +79,41 @@ export default function Home() {
               <FileSpreadsheet className="mb-4 h-10 w-10 text-primary" />
 
               <h3 className="mb-2 text-lg font-bold text-foreground">
-                Financial Reporting
+                Google & System Automation
               </h3>
 
               <p className="text-sm leading-6 text-muted-foreground">
-                Prepare financial reports, reconcile records, monitor
-                performance, and support management decisions with accurate
-                data.
+                Automate Google Sheets with Apps Script, build mobile apps and
+                workflows with AppSheet, and connect Google Workspace tools to
+                streamline business processes.
               </p>
             </div>
 
             <div className="animate-in fade-in slide-in-from-bottom-4 rounded-lg border border-border p-6 delay-150 duration-700 transition hover:-translate-y-1 hover:bg-secondary hover:shadow-md">
-              <BarChart3 className="mb-4 h-10 w-10 text-primary" />
+              <Code className="mb-4 h-10 w-10 text-primary" />
 
               <h3 className="mb-2 text-lg font-bold text-foreground">
-                Excel & Dashboards
+                Full-Stack Next.js
               </h3>
 
               <p className="text-sm leading-6 text-muted-foreground">
-                Build Excel reports using advanced formulas, Pivot Tables,
-                XLOOKUP / VLOOKUP, conditional formatting, charts, and
-                dashboards.
+                Build full-stack web apps with Next.js, TypeScript, PostgreSQL,
+                and Prisma, including realtime features, background job
+                queues, secure login, and Docker deployment.
               </p>
             </div>
 
             <div className="animate-in fade-in slide-in-from-bottom-4 rounded-lg border border-border p-6 delay-300 duration-700 transition hover:-translate-y-1 hover:bg-secondary hover:shadow-md">
-              <Database className="mb-4 h-10 w-10 text-primary" />
+              <BarChart3 className="mb-4 h-10 w-10 text-primary" />
 
               <h3 className="mb-2 text-lg font-bold text-foreground">
-                Python, SQL & Data
+                Data & Reporting
               </h3>
 
               <p className="text-sm leading-6 text-muted-foreground">
-                Use Python, Pandas, NumPy, Plotly, Streamlit, PostgreSQL, and
-                SQL to clean, analyze, visualize, and extract business data.
+                Use Google Sheets, Excel, Python, Pandas, NumPy, Plotly,
+                Streamlit, PostgreSQL, and SQL to clean, analyze, visualize,
+                and extract business data.
               </p>
             </div>
           </div>
