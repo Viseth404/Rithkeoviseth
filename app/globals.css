@@ -167,3 +167,25 @@
     @apply font-sans;
   }
 }
+
+/* Swiper theme: match pagination bullets to the site palette */
+.featured-swiper {
+  --swiper-pagination-color: var(--foreground);
+  --swiper-pagination-bullet-inactive-color: var(--muted-foreground);
+  --swiper-pagination-bullet-inactive-opacity: 0.4;
+  --swiper-pagination-bullet-horizontal-gap: 5px;
+}
+
+.featured-swiper .swiper-pagination-bullet {
+  transition: width 300ms ease, opacity 300ms ease, transform 300ms ease;
+}
+
+.featured-swiper .swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 9999px;
+}
+
+.featured-prev.swiper-button-lock,
+.featured-next.swiper-button-lock {
+  display: none;
+}

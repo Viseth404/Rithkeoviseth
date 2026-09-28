@@ -3,6 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, BarChart3, FileSpreadsheet, Code } from "lucide-react"
+import { FeaturedProjects } from "@/components/featured-projects"
 
 export default function Home() {
   return (
@@ -119,6 +120,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <FeaturedProjects />
     </>
   )
 }
