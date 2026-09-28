@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import { useLayoutEffect, useRef, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
 
@@ -17,10 +17,21 @@ const navLinks = [
 export function Header() {
   const pathname = usePathname()
   const [mobileOpen, setMobileOpen] = useState(false)
-
-  if (pathname.startsWith('/admin')) return null
+  const linkRefs = useRef<Record<string, HTMLAnchorElement | null>>({})
+  const [indicator, setIndicator] = useState<{ left: number; width: number } | null>(null)
+  const [animateIndicator, setAnimateIndicator] = useState(false)
 
   const isActive = (href: string) => pathname === href || pathname.startsWith(href + '/')
+  const activeHref = navLinks.find((link) => isActive(link.href))?.href
+
+  // Move the pill under the active link; skip the transition on first paint so it doesn't slide in from 0
+  useLayoutEffect(() => {
+    const el = activeHref ? linkRefs.current[activeHref] : null
+    setIndicator(el ? { left: el.offsetLeft, width: el.offsetWidth } : null)
+    if (el && !animateIndicator) requestAnimationFrame(() => setAnimateIndicator(true))
+  }, [activeHref, animateIndicator])
+
+  if (pathname.startsWith('/admin')) return null
 
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
@@ -32,14 +43,30 @@ export function Header() {
           Portfolio
         </Link>
 
-        <div className="hidden items-center gap-1 md:flex">
+        <div className="relative hidden items-center gap-1 md:flex">
+          <span
+            aria-hidden
+            className={`absolute top-1/2 h-9 -translate-y-1/2 rounded-lg bg-primary ${
+              animateIndicator
+                ? 'transition-[left,width,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none'
+                : ''
+            }`}
+            style={{
+              left: indicator?.left ?? 0,
+              width: indicator?.width ?? 0,
+              opacity: indicator ? 1 : 0,
+            }}
+          />
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+              ref={(el) => {
+                linkRefs.current[link.href] = el
+              }}
+              className={`relative rounded-lg px-3 py-2 text-sm font-medium transition-colors duration-300 ${
                 isActive(link.href)
-                  ? 'bg-primary text-primary-foreground'
+                  ? 'text-primary-foreground'
                   : 'text-muted-foreground hover:bg-secondary hover:text-foreground'
               }`}
             >
